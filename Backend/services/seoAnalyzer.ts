@@ -15,6 +15,7 @@ export async function analyzeSEO(url: string): Promise<AnalysisResult | null> {
       url = 'https://' + url;
     }
     
+    
     // Fetch HTML from the URL
     const response = await axios.get(url, {
       headers: {
